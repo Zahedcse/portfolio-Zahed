@@ -1,5 +1,5 @@
 export const navLinks = [
-  { label: "Home", href: "/" },
+  { label: "Home", href: "#home" },
   { label: "Projects", href: "#projects" },
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
@@ -23,7 +23,7 @@ export const profileData = {
   heroMetrics: [
     { label: "Regression time saved", value: "30%" },
     { label: "Release stability boost", value: "+25%" },
-    { label: "Peak load validated", value: "10M+ users" },
+    { label: "Peak load validated", value: "1M+ users" },
   ],
   highlights: [
     "Lead QA for Empathika’s 8-module ERP serving 1K+ daily users across UK care homes.",
