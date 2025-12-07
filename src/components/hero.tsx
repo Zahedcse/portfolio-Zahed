@@ -13,10 +13,7 @@ export function Hero() {
     profileData;
 
   return (
-    <section
-      id="home"
-      className="relative isolate overflow-hidden pt-28 pb-16 sm:pt-32 sm:pb-20"
-    >
+    <section className="relative isolate overflow-hidden pt-28 pb-16 sm:pt-32 sm:pb-20">
       <div className="sparkle left-12 top-20 hidden lg:block" />
       <div className="sparkle sparkle--secondary right-16 bottom-0 hidden lg:block" />
 

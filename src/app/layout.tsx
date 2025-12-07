@@ -21,7 +21,7 @@ const siteDescription =
   "Portfolio for Zahed Alam — QA leader specializing in automation, performance, and mobile testing for large-scale SaaS and high-traffic platforms.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://zahed-portfolio.vercel.app"),
+  metadataBase: new URL("https://portfolio-zahed.vercel.app"),
   title: siteTitle,
   description: siteDescription,
   keywords: [
