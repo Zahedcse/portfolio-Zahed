@@ -185,19 +185,37 @@ export const profileData = {
       title: "Advanced Certificate for Management Professionals (ACMP 4.0)",
       org: "IBA, University of Dhaka",
       year: "2025",
+      description:
+        "Executive leadership curriculum covering strategy, operations, and data-driven decision frameworks.",
     },
     {
       title: "Selenium WebDriver with Python — Framework",
       org: "Udemy",
       year: "2024",
+      description:
+        "Advanced automation bootcamp on building reusable Selenium frameworks, CI-ready reporting, and best practices.",
     },
     {
       title: "Cypress Web Automation Testing (Zero to Hero)",
       org: "Udemy",
       year: "2024",
+      description:
+        "Hands-on Cypress labs for component, API, and end-to-end suites with parallel CI orchestration.",
     },
-    { title: "Agile Testing with TestRail", org: "TestRail Academy", year: "2023" },
-    { title: "Crash Course with Python", org: "Google / Coursera", year: "2022" },
+    {
+      title: "Agile Testing with TestRail",
+      org: "TestRail Academy",
+      year: "2023",
+      description:
+        "Focused certification on structuring agile QA plans, coverage maps, and executive-ready reporting inside TestRail.",
+    },
+    {
+      title: "Crash Course with Python",
+      org: "Google / Coursera",
+      year: "2022",
+      description:
+        "Foundational Python specialization emphasizing automation fundamentals, scripting discipline, and debugging habits.",
+    },
   ],
   contact: {
     availability: "Open to remote-friendly Sr. QA / SDET roles",
