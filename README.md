@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Zahed Alam — QA Portfolio
 
-## Getting Started
+A modern, animated single-page experience for Senior QA Engineer Zahed Alam. It highlights signature projects, skills, and contact CTAs with a neon-dark visual language built for quick Vercel deployments.
 
-First, run the development server:
+### Tech stack
+
+- **Next.js 15** (App Router) + React 19
+- **Tailwind CSS** custom theme with layered gradients
+- **Framer Motion** for scroll-triggered reveals and hover motion
+- **lucide-react** icons & `next/image` optimized assets
+
+### Local development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# visit http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Useful scripts
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `npm run dev` – start the dev server
+- `npm run lint` – run ESLint
+- `npm run build` – production build with type/lint checks
+- `npm run start` – serve the production build locally
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Deploying to Vercel
 
-## Learn More
+1. Push this repository to GitHub (or any Git provider).
+2. In [Vercel](https://vercel.com/new), choose “Import Project” and select the repo.
+3. Leave defaults (`npm run build`, output `.next`, install command `npm install`).
+4. Deploy — preview URLs are created automatically; promote the build to production when ready.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+> Tip: run `npm run build` locally before deploying to confirm the bundle, ESLint, and type checks all pass.

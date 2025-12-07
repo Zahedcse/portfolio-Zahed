@@ -1,26 +1,140 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: dark;
+  --background: #030016;
+  --foreground: #f8fafc;
+  --muted: #0b1120;
+  --muted-foreground: #94a3b8;
+  --brand: #38bdf8;
+  --brand-secondary: #c084fc;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-brand: var(--brand);
+  --color-brand-secondary: var(--brand-secondary);
+  --font-sans: var(--font-space-grotesk);
+  --font-mono: var(--font-plex-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--background);
 }
 
 body {
-  background: var(--background);
+  min-height: 100vh;
+  font-family: var(--font-space-grotesk), system-ui, -apple-system, sans-serif;
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  position: relative;
+  overflow-x: hidden;
+  background-image: radial-gradient(
+      circle at 20% 20%,
+      rgba(56, 189, 248, 0.12),
+      transparent 45%
+    ),
+    radial-gradient(
+      circle at 80% 0%,
+      rgba(192, 132, 252, 0.18),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 50% 80%,
+      rgba(14, 165, 233, 0.15),
+      transparent 35%
+    );
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(
+    circle at 50% 20%,
+    rgba(59, 130, 246, 0.12),
+    transparent 45%
+  );
+  opacity: 0.7;
+  filter: blur(90px);
+  z-index: -1;
+}
+
+main {
+  position: relative;
+  isolation: isolate;
+}
+
+::selection {
+  background: rgba(56, 189, 248, 0.35);
+  color: #e2e8f0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.65);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #38bdf8, #c084fc);
+  border-radius: 999px;
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply rounded-3xl border border-white/10 bg-white/5 p-6 shadow-[0_0_60px_rgba(59,23,120,0.15)] backdrop-blur-3xl;
+  }
+
+  .tag {
+    @apply inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium uppercase tracking-wide text-white/80;
+  }
+}
+
+.sparkle {
+  position: absolute;
+  pointer-events: none;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.35;
+  background: radial-gradient(
+    circle,
+    rgba(56, 189, 248, 0.55),
+    transparent 70%
+  );
+  animation: float 18s ease-in-out infinite;
+}
+
+.sparkle--secondary {
+  background: radial-gradient(
+    circle,
+    rgba(192, 132, 252, 0.55),
+    transparent 70%
+  );
+  animation-duration: 22s;
+}
+
+@keyframes float {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(30px, -40px, 0) scale(1.05);
+  }
+  100% {
+    transform: translate3d(-20px, 20px, 0);
+  }
 }
