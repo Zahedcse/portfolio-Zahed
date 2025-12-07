@@ -42,10 +42,10 @@ export const metadata: Metadata = {
     siteName: siteTitle,
     images: [
       {
-        url: "/images/zahed.jpg",
-        width: 800,
-        height: 1067,
-        alt: "Portrait of Zahed Alam",
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Zahed Alam — Senior QA Engineer",
       },
     ],
   },
@@ -53,7 +53,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: siteTitle,
     description: siteDescription,
-    images: ["/images/zahed.jpg"],
+    images: [
+      {
+        url: "/opengraph-image",
+        alt: "Zahed Alam — Senior QA Engineer",
+      },
+    ],
   },
   icons: {
     icon: [

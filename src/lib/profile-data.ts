@@ -56,8 +56,8 @@ export const profileData = {
         "Instituted quality dashboards and shift-left pairing to unblock engineering faster.",
         "Mentored junior QA engineers on exploratory heuristics and accessibility coverage.",
       ],
-      stack: ["JMeter", "k6", "CI/CD", "Accessibility", "Observability"],
-      link: "https://www.theworldgames.org",
+      stack: ["k6", "CI/CD", "Accessibility", "Observability"],
+      link: "https://live.theworldgames.org/",
     },
     {
       title: "GlowConnect Marketplace",
