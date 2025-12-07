@@ -55,6 +55,17 @@ export const metadata: Metadata = {
     description: siteDescription,
     images: ["/images/zahed.jpg"],
   },
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.svg", rel: "shortcut icon" },
+    ],
+    apple: [
+      {
+        url: "/favicon.svg",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
